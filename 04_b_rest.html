@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450" />
+    <title>WOOSOO</title>
+    <!--폰트연결-->
+    <link rel="stylesheet" href="./font_2/stylesheet.css" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <!--파비콘연결-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--aos 연결 : css보다 위에-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--css 연결-->
+    <link rel="stylesheet" href="./css/b_rest.css">
+
+
+</head>
+
+<body>
+    <div id="header_inner">
+        <input type="checkbox" id="menu_icon" />
+        <label for="menu_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li class="slidebar_title"><a href="./03_about us.html">About Us</a></li>
+                <li><a href="./03_about us.html">Story</a></li>
+                <li><a href="./03_about us.html#sub_banner">Book&Rest</a></li>
+                <li><a href="./03_about us.html#value">Brand Value </a></li>
+                <li><a href="./03_about us.html#logo_system">Logo System</a></li>
+                <li><a href="./03_about us.html#color">Color System</a></li>
+                <li><a href="./03_about us.html#location">Location</a></li>
+            </ul>
+
+            <ul>
+                <li class="slidebar_title"><a href="./04_b_rest.html">B’Rest</a></li>
+                <li><a href="#deluxe">Deluxe</a></li>
+                <li><a href="#sweet">Sweet</a></li>
+                <li><a href="#pakage">Room Package</a></li>
+                <li><a href="#special">Promotion</a></li>
+                <li><a href="#dinning">Dinning</a></li>
+            </ul>
+            <ul>
+                <li class="slidebar_title"><a href="./01_b_space.html">B’Space</a></li>
+                <li><a href="./01_b_space.html#library_tap">Library</a></li>
+                <li><a href="./01_b_space.html#cafe_tap">Cafe SUSU</a></li>
+                <li><a href="./01_b_space.html#garden">침묵의 정원</a></li>
+                <li><a href="./01_b_space.html#shelf_box1">서가1</a></li>
+                <li><a href="./01_b_space.html#shelf_box2">서가2</a></li>
+                <li><a href="./01_b_space.html#shelf_box3">Meeting Room</a></li>
+            </ul>
+            <ul>
+                <li class="slidebar_title"><a href="./02_b_programe.html">B'programe</a></li>
+                <li><a href="./02_b_programe.html#calendar">Programe</a></li>
+                <li><a href="./02_b_programe.html#programe_more">더 많은 행사</a></li>
+                <li><a href="./02_b_programe.html#notice">공지사항</a></li>
+                <li><a href="./02_b_programe.html#book_banner">이달의 도서</a></li>
+            </ul>
+            <ul>
+                <li class="slidebar_title"><a href="./05_membership.html">Membership</a></li>
+                <li><a href="./05_membership.html#intro">멤버십 소개</a></li>
+                <li><a href="./05_membership.html#benefit">혜택 미리보기</a></li>
+                <li><a href="./05_membership.html#card_tap">등급별 혜택</a></li>
+                <li><a href="./05_membership.html#complete">발급/수령</a></li>
+            </ul>
+        </div> <!--sidebar-->
+        <div class="my_page"><a href="#none">Reservation</a></div><!--my_page-->
+        <div class="logo">
+            <a href="./00_main.html"><img src="./img/header_logo.png" alt="로고 이미지" /></a>
+        </div><!--logo-->
+    </div><!--header_inner-->
+    <div id="main_banner">
+        <div class="main_banner_inner" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./img_rest/main_title.png" alt="space글자 이미지 ">
+        </div><!--main_banner_inner-->
+    </div><!--main_banner-->
+
+    <div id="room">
+        <div class="room_inner">
+            <h2 class="title">B’Rest Room</h2>
+            <div class="deluxe" id="deluxe">
+
+                <!-- Swiper -->
+                <div class="swiper room_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img_rest/room_img_deluxe01.jpg" alt="객실이미지1"></div>
+                        <!--slide-->
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet02.jpg" alt="객실이미지2"></div>
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet03.jpg" alt="객실이미지3"></div>
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet04.jpg" alt="객실이미지4"></div>
+
+                        <!--slide-->
+                    </div>
+                    <div class="swiper-button-next nb_next"></div>
+                    <div class="swiper-button-prev nb_prev"></div>
+                    <div class="swiper-pagination nb_page"></div>
+                </div><!--room_swiper-->
+
+
+                <div class="text_box">
+                    <h1 data-aos="fade-left" data-aos-duration="1000"><img src="./img_rest/room_name_deluxe.png"
+                            alt="deluxe글자이미지">
+                    </h1>
+                    <p data-aos="fade-left" data-aos-duration="1050" data-aos-delay="300">심플하고 서정적인 객실에서 <br>
+                        종자산의 능선과 자연의 풍경을 감상하실 수 있습니다. <br>
+                        아늑한 인테리어와 침실, 샤워부스를 갖춘 욕실로 구성된 객실입니다.</p>
+                    <div class="info" data-aos="fade-left" data-aos-duration="1050" data-aos-delay="600">
+                        <ol>
+                            <li>룸사이즈 ｜ 29m²</li>
+                            <li>수용인원 ｜ 최대3인</li>
+                            <li>체크인<span>｜ 체크인</span></li>
+                        </ol>
+                        <ol>
+                            <li>베드타입 ｜ Double / Twin</li>
+                            <li>객실구조 ｜ 침실,화장실</li>
+                            <li>체크아웃 ｜ 오전11시 </li>
+                        </ol>
+
+                        <p class="btn1"><a href="#none">예약</a></p>
+
+                        </a><!--btn1-->
+                    </div><!--info-->
+                </div><!--deluxe_text-->
+            </div><!--deluxe-->
+
+            <div class="sweet" id="sweet">
+
+                <div class="text_box">
+                    <h1 data-aos="fade-right" data-aos-duration="1000"><img src="./img_rest/room_name_sweet.png"
+                            alt="sweet글자이미지">
+                    </h1>
+                    <p data-aos="fade-right" data-aos-duration="1050" data-aos-delay="300">우아하고 편안한 느낌의 객실에서 <br>
+                        종자산의 능선과 자연의 풍경을 감상하실 수 있습니다. <br>
+                        테라스와 침실, 욕조와 샤워부스를 갖춘 욕실로 구성된 객실입니다.</p>
+                    <div class="info" data-aos="fade-right" data-aos-duration="1050" data-aos-delay="600">
+                        <ol>
+                            <li>룸사이즈 ｜ 41m²</li>
+                            <li>수용인원 ｜ 최대5인</li>
+                            <li>체크인<span>｜ 오후 3시</span></li>
+                        </ol>
+                        <ol>
+                            <li>베드타입 ｜ King</li>
+                            <li>객실구조 ｜ 침실,화장실,테라스</li>
+                            <li>체크아웃 ｜ 오전11시</li>
+                        </ol>
+                        <p class="btn1"><a href="#none">예약</a></p>
+                    </div><!--info-->
+                </div><!--sweet_text-->
+                <!-- Swiper -->
+                <div class="swiper room_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet01.jpg" alt="객실이미지1"></div>
+                        <!--slide-->
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet02.jpg" alt="객실이미지2"></div>
+                        <!--slide-->
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet03.jpg" alt="객실이미지3"></div>
+                        <!--slide-->
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet04.jpg" alt="객실이미지4"></div>
+                        <!--slide-->
+                        <div class="swiper-slide"><img src="./img_rest/room_img_sweet05.jpg" alt="객실이미지5"></div>
+                        <!--slide-->
+
+                    </div>
+                    <div class="swiper-button-next nb_next"></div>
+                    <div class="swiper-button-prev nb_prev"></div>
+                    <div class="swiper-pagination nb_page"></div>
+                </div><!--room_swiper-->
+            </div><!--sweet-->
+
+
+        </div><!--room_inner-->
+    </div>
+
+    <div id="service">
+        <div class="service_inner">
+            <ul data-aos="zoom-in-up">
+                <li><img src="./img_rest/service_img1.png" alt="서비스이미지1"></li>
+                <li class="service_title">유기농 코튼 침구</li>
+                <li class="service_text">피부에 자극이 없는 유기농 코튼 침구로<br>
+                    쾌적하고 안락한 휴식을 제공합니다.</li>
+            </ul>
+            <ul data-aos="zoom-in-up" data-aos-delay="300">
+                <li><img src="./img_rest/service_img2.png" alt="서비스이미지2"></li>
+                <li class="service_title">아로마 테라피</li>
+                <li class="service_text">아로마 테라피 브랜드 '리추얼'의 제품을 <br>
+                    룸 어메니티로 제공합니다.</li>
+            </ul>
+            <ul data-aos="zoom-in-up" data-aos-delay="600">
+                <li><img src="./img_rest/service_img3.png" alt="서비스이미지4"></li>
+                <li class="service_title">특별한 향기</li>
+                <li class="service_text">깊은 숲속의 향에 잉글리시 데이지 향을 더한 <br>
+                    WOOSOO만의 시그니처 향</li>
+            </ul>
+            <ul data-aos="zoom-in-up" data-aos-delay="900">
+                <li><img src="./img_rest/service_img4.png" alt="서비스이미지5"></li>
+                <li class="service_title">객실 라디오 서비스</li>
+                <li class="service_text">전 객실 TV 대신 라디오를 제공합니다. <br>
+                    듣는 행위, 한 가지에 집중하는 시간을 보내세요.</li>
+            </ul>
+
+        </div><!--service_inner-->
+    </div><!--service-->
+    <div id="book_banner">
+        <div class="book_banner_inner" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+            <img src="./img_rest/book_banner.png" alt="배너이미지">
+        </div><!--book_banner_inner-->
+    </div><!--book_banner-->
+
+    <div id="pakage">
+        <h1 class="title">Room Package</h1>
+        <div class="pakage_inner">
+            <div class="pakage_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+                <img src="./img_rest/room_package_img1.png" alt="룸패키지이미지1">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">#Healing</a></li>
+                    <li><a href="#none">#Therapy</a></li>
+                </ul>
+                <p class="pakage_title">리추얼 X WOOSOO</p>
+                <p class="pakage_text">아로마 테라피 브랜드 '리추얼'과 함께하는 쿨 서머 패키지!
+                    <br> 스파클링 와인과 함께 아로마 오일이 함유된
+                    <br> 배스 밤&반신욕 패키지를 선보입니다.
+                </p>
+                <p class="pakage_date">예약 기간 2024.06.09 ~ 2024.06.16</p>
+                <p class="pakage_date">숙박 기간 2024.06.17 ~ 2024.06.24</p>
+                <p class="price">423,500 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+            <div class="pakage_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700"
+                data-aos-delay="400">
+                <img src="./img_rest/room_package_img2.png" alt="룸패키지이미지2">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">#Party</a></li>
+                    <li><a href="#none">#Special Offer</a></li>
+                </ul>
+                <p class="pakage_title">수고많은 당신께 특별한 하루를!</p>
+                <p class="pakage_text">행복한 생일 또는 기념일을 추억할 수 있는 패키지입니다. <br>
+                    디너코스2인분과 샴페인, 케이크가 포함되어 있습니다.
+                </p>
+                <p class="pakage_date">예약 기간 2024.06.16 ~ 2024.09.23</p>
+                <p class="pakage_date">숙박 기간 2024.06.23 ~ 2024.09.30</p>
+                <p class="price">550,500 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+            <div class="pakage_box pakage2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="700" data-aos-delay="800">
+                <img src="./img_rest/room_package_img3.png" alt="룸패키지이미지3">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">#Bakery</a></li>
+                    <li><a href="#none">#Brunch</a></li>
+                </ul>
+                <p class="pakage_title">소서에는 과일 브런치와 함께!</p>
+                <p class="pakage_text">여름이 본격적으로 시작되는 소서를 맞이하여 <br>
+                    베이커리 ‘Epoch’에서 선보이는 과일 브런치 세트! <br>
+                    유기농 밀과 신성한 과일로 만든 브런치를 객실에서 즐겨보세요!
+
+                </p>
+                <p class="pakage_date">예약 기간 2024.06.13 ~ 2024.06.30</p>
+                <p class="pakage_date">숙박 기간 2024.07.06 ~ 2024.08.06</p>
+                <p class="price">352,000 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+            <div class="pakage_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
+                <img src="./img_rest/room_package_img4.png" alt="룸패키지이미지4">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">##Outdoor movie</a></li>
+                    <li><a href="#none">#Art</a></li>
+                </ul>
+                <p class="pakage_title">매주 토요일, 문화인의 밤!</p>
+                <p class="pakage_text">야외에서 즐기는 문화인의 밤 <br>
+                    인생작이 될 감성적인 영화를 정원에서 즐겨보세요 <br>
+                    맥주 1잔과 팝콘, 예매권이 포함되어 있습니다.
+
+                </p>
+                <p class="pakage_date">예약 기간 2024.06.06 ~ 2024.12.21</p>
+                <p class="pakage_date">숙박 기간 2024.07.06 ~ 2024.12.21</p>
+                <p class="price">290,000 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+            <div class="pakage_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700"
+                data-aos-delay="400">
+                <img src="./img_rest/room_package_img5.png" alt="룸패키지이미지5">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">#Healing</a></li>
+                    <li><a href="#none">#Diary</a></li>
+                </ul>
+                <p class="pakage_title">WOOSOO X Dear MOMO</p>
+                <p class="pakage_text">사랑스러운 모모가 전하는 삶에 대한 메시지. <br>
+                    모모의 명장면과 따스한 메시지를 담아낸 다이어리와 <br>
+                    엽서 캘린더 세트와 함께하세요!
+                </p>
+                <p class="pakage_date">예약 기간 2024.07.04 ~ 2024.08.31</p>
+                <p class="pakage_date">숙박 기간 2024.07.11 ~ 2024.08.31</p>
+                <p class="price">250,500 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+            <div class="pakage_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700"
+                data-aos-delay="800">
+                <img src="./img_rest/room_package_img6.png" alt="룸패키지이미지6">
+                <ul>
+                    <li><a href="#none">#B’Rest</a></li>
+                    <li><a href="#none">#Healthy</a></li>
+                    <li><a href="#none">#Dinner</a></li>
+                </ul>
+                <p class="pakage_title">복날 X WooChen</p>
+                <p class="pakage_text">복날을 맞이하여 다이닝 ’WooChen’에서 선보이는 <br>
+                    최고급 식재료와 유기농 닭으로 만든 프리미엄 보양식!
+                </p>
+                <p class="pakage_date">예약 기간 2024.06.03 ~ 2024.08.04</p>
+                <p class="pakage_date">숙박 기간 2024.07.03 ~ 2024.08.11</p>
+                <p class="price">300,500 <span>KRW ~</span></p>
+                <div class="btn2">
+                    <a href="#none">예약</a>
+                </div><!--btn2-->
+            </div><!--pakage_box-->
+
+        </div><!--pakage_inner-->
+        <ul class="btn3">
+            <li><a href="#none">More</a></li>
+            <li><img class="arrow01" src="./img_rest/room_package_arrow.png" alt="화살표이미지"></li>
+        </ul>
+    </div><!--pakage-->
+
+    <div id="special">
+        <div class="special_inner">
+            <h1 class="title">Promotion</h1>
+            <!-- Swiper -->
+            <div class="swiper speacial_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img_rest/special_img1.png" alt="프로모션 이미지1">
+                        <p class="btn_pakage"><a href="#none">객실+패키지<br>예약</a></p>
+                    </div><!--slide-->
+                    <div class="swiper-slide"><img src="./img_rest/special_img2.png" alt="프로모션 이미지2">
+                        <p class="btn_pakage"><a href="#none">객실+패키지<br>예약</a></p>
+                    </div><!--slide-->
+                    <div class="swiper-slide"><img src="./img_rest/special_img3.png" alt="프로모션 이미지3">
+                        <p class="btn_pakage"><a href="#none">객실+패키지<br>예약</a></p>
+                    </div><!--slide-->
+                    <div class="swiper-slide"><img src="./img_rest/special_img4.png" alt="프로모션 이미지4">
+                        <p class="btn_pakage"><a href="#none">객실+패키지<br>예약</a></p>
+                    </div><!--slide-->
+                    <div class="swiper-slide"><img src="./img_rest/special_img5.png" alt="프로모션 이미지5">
+                        <p class="btn_pakage"><a href="#none">객실+패키지<br>예약</a></p>
+                    </div><!--slide-->
+
+                </div><!--swiper-wrapper-->
+
+            </div>
+
+        </div><!---special_inner-->
+    </div><!--special-->
+
+    <div id="dinning">
+        <div class="dinning_inner">
+            <h1 class="title">Dinning</h1>
+            <div class="dinning_box">
+                <div class="d_text_box1" data-aos="fade-right" data-aos-duration="1050" data-aos-delay="300">
+                    <p class="d_title">Dinnig ,WooChen</p><!--d_title-->
+                    <p class="d_text">다이닝 '우천'에서는 매주 색다른 메뉴로 구성하여 <br>
+                        홍천한우와 인삼이 포함된 인상적인 건강식 레시피를 제공합니다.</p><!--d_text-->
+                    <div class="d_info">
+                        <ul>
+                            <li>점심 ｜ 12:00 ~ 15:00</li>
+                            <li>저녁 ｜ 17:30 ~ 20:00</li>
+                            <li>( Last Order 19:30 )</li>
+                        </ul>
+                        <ol>
+                            <li>위치 ｜ B'Rest 3층</li>
+                            <li>문의 ｜ 033-434-0025</li>
+                        </ol>
+                    </div><!--d_info-->
+
+                </div><!--d_text_box-->
+                <img src="./img_rest/dinning_img1.png" alt="다이닝 이미지1" data-aos="fade-up" data-aos-duration="1050">
+            </div><!--dinning_box-->
+
+            <div class="dinning_box">
+                <img src="./img_rest/dinning_img2.png" alt="다이닝 이미지2" data-aos="fade-up" data-aos-duration="1050">
+                <div class="d_text_box2" data-aos="fade-left" data-aos-duration="1050" data-aos-delay="300">
+                    <p class="d_title">Kitchen, 오롯이</p><!--d_title-->
+                    <p class="d_text">간단한 샐러드와 요거트를 비롯하여 <br>
+                        다양한 요리를 즐길 수있는 뷔페식 레스트랑 입니다. </p><!--d_text-->
+                    <div class="d_info">
+                        <ul>
+                            <li>조식 ｜ 07:00 ~ 10:00</li>
+                            <li>점심 ｜ 11:30 ~ 15:00</li>
+                            <li>저녁 ｜ 17:30 ~ 20:00</li>
+                            <li>( Last Order 19:30 )</li>
+                        </ul>
+                        <ol>
+                            <li>위치 ｜ B'Rest 3층</li>
+                            <li>문의 ｜ 033-434-0025</li>
+                        </ol>
+                    </div><!--d_info-->
+
+                </div><!--d_text_box-->
+
+            </div><!--dinning_box-->
+
+            <div class="dinning_box">
+
+                <div class="d_text_box3" data-aos="fade-right" data-aos-duration="1050" data-aos-delay="300">
+                    <p class="d_title">Lounge, Nodan</p><!--d_title-->
+                    <p class="d_text">라운지 ’노단’에서는 시그니처 칵테일과 <br>
+                        시즌 한정 와인을 즐기실 수 있습니다.</p><!--d_text-->
+                    <div class="d_info">
+                        <ul>
+                            <li>매일 ｜ 18:00 ~ 01:00</li>
+                        </ul>
+                        <ol>
+                            <li>위치 ｜ B'Rest 3층</li>
+                            <li>문의 ｜ 033-434-0027</li>
+                        </ol>
+                    </div><!--d_info-->
+
+                </div><!--d_text_box-->
+                <img src="./img_rest/dinning_img3.png" alt="다이닝 이미지3" data-aos="fade-up" data-aos-duration="1050">
+
+            </div><!--dinning_box-->
+
+            <div class="dinning_box">
+                <img src="./img_rest/dinning_img4.png" alt="다이닝 이미지4" data-aos="fade-up" data-aos-duration="1050">
+
+                <div class="d_text_box4" data-aos="fade-left" data-aos-duration="1050" data-aos-delay="300">
+                    <p class="d_title">
+                    <p class="d_title">Bakery, Epoch</p><!--d_title-->
+                    <p class="d_text">전문 파티시에가 엄선한 신선한 식재료로 <br>
+                        다양한 페이스트리와 케이크를 제공하는
+                        유기농 베이커리입니다.</p><!--d_text-->
+                    <div class="d_info">
+                        <ul>
+                            <li>매일 ｜ 08:00 ~ 20:00</li>
+                        </ul>
+                        <ol>
+                            <li>위치 ｜ B'Rest 3층</li>
+                            <li>문의 ｜ 033-434-0030</li>
+                        </ol>
+                    </div><!--d_info-->
+
+                </div><!--d_text_box-->
+
+
+            </div><!--dinning_box-->
+        </div><!--dinning_inner-->
+    </div><!--dinning-->
+
+    <div id="fixed_button">
+        <div class="fixed_inner">
+
+            <a href="#main_banner" class="top_btn">
+                <img src="./img/top_arrow_button.png" alt="top버튼 이미지">
+            </a>
+            <!--a에 id는 한개여야 함-->
+            <a href="#none" class="top_btn2">
+                <ul>
+                    <li>
+                        <img src="./img/top_mypage_button.png" alt="마이페이지버튼 이미지">
+                        <p>my page</p>
+                    </li>
+
+                </ul>
+
+            </a>
+
+        </div>
+    </div><!--fixed_button-->
+    <footer>
+        <div class="footer_inner">
+            <ul class="footer_icon">
+                <li><a href="#"><img src="./img/footer_icon_mail.png" alt=" 메일 아이콘 이미지"></a></li>
+                <li><a href="#"><img src="./img/footer_icon_call.png" alt="전화 아이콘 이미지"></a></li>
+                <li><a href="#"><img src="./img/footer_icon_insta.png" alt="인스타크램 아이콘 이미지"></a></li>
+            </ul><!--footer_icon-->
+            <ul class="adress">
+                <li><a href="./00_main.html"><img src="./img/footer_logo.jpg" alt="서브로고 이미지"></a></li>
+                <li>강원도 홍천군 서면 대곡리 산 165 (상귀량길 119) ｜ tel. 1588-3885</li>
+                <li>사업자 등록번호. 211-87-67892 ｜ 대표이사. 정은진 </li>
+                <li>©2024 WooSoo Co. All rights reserved.</li>
+            </ul>
+            <div class="footer_quick">
+                <a href="./03_about us.html#location">오시는 길</a>
+            </div><!--footer_quick-->
+
+        </div><!--footer_inner-->
+
+    </footer>
+
+    <!--제이쿼리연결-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/rest_pakage.js"></script>
+
+
+    <!--스크롤 시, 원하는 높이가 됐을 때 작아지는 상단바 -->
+    <script src="./js/header_scroll.js"></script>
+
+    <!--top으로 스르륵 이동하기 -->
+    <script src="./js/top_move.js"></script>
+
+    <!--map 마우스오버js-->
+    <script src="./js/map_hover.js"></script>
+    <!--aos 연결-->
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+</html>
