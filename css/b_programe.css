@@ -1,0 +1,966 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+/*폰트는 경기청년바탕체, 함렛을 쓴다.
+1.경기천년바탕 font-family: 'GyeonggiBatang';
+2.경기천년제목 font-family: 'GyeonggiTitle';
+3.함렛  font-family: 'Hahmlet';
+
+*/
+
+
+
+body {
+    min-width: 1450px;
+    font-size: 16px;
+    line-height: 2.8px;
+    font-family: 'GyeonggiBatang';
+    line-height: 26px;
+    color: rgba(80, 80, 78, 1);
+    background: url(../img/background.jpg) repeat left top;
+}
+
+/*header_inner_스크롤 효과 :js 가상.active클래스 붙여쓰기 */
+
+.active .logo img {
+    width: 40%;
+}
+
+.active .sidebar {
+    top: calc(-100vh + 58px);
+
+
+}
+
+.active .logo {
+    top: 11px;
+}
+
+
+.active input[id="menu_icon"]+label {
+    top: 13px;
+    width: 36px;
+    height: 26px;
+}
+
+.active .my_page a {
+    padding: 7px 20px 4px 20px;
+    top: 7px;
+    border: 2px solid #8d7b69;
+    border-radius: 0 25px 0 0;
+    color: #8d7b69;
+    font-weight: bold;
+
+}
+
+
+/*햄버거 버튼 만들기*/
+input[id="menu_icon"] {
+    display: none;
+}
+
+input[id="menu_icon"]+label {
+    top: 42px;
+    left: 35px;
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 102;
+}
+
+input[id="menu_icon"]+label span {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+input[id="menu_icon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menu_icon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menu_icon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/*x자*/
+input[id="menu_icon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%)rotate(45deg);
+}
+
+input[id="menu_icon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menu_icon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%)rotate(-45deg);
+}
+
+/*스르륵 애니메이션*/
+div[class="sidebar"] {
+    width: 100%;
+    height: 100vh;
+    /*765*/
+    background: linear-gradient(180deg, #4b332b, rgba(255, 202, 149, 0.28));
+    position: fixed;
+    top: calc(-100vh + 120px);
+    /*스르륵바 위치*/
+    left: 0;
+    z-index: 98;
+    transition: all 0.3s;
+
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 144px;
+}
+
+/*서브메뉴 수정하기 */
+
+.sidebar ul {
+    /*0422*/
+    border-right: 2px dotted rgba(255, 255, 255, 0.45);
+    height: 359px;
+    width: 20%;
+    box-sizing: border-box;
+    padding-left: 85px;
+}
+
+.sidebar ul li:last-child {
+    padding: 0;
+}
+
+.sidebar ul li {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'GyeonggiTitle';
+    padding-bottom: 28px;
+}
+
+.sidebar ul li.slidebar_title {
+    font-size: 18px;
+    font-family: 'GyeonggiTitle';
+    color: #e1af7b;
+    line-height: 1.2;
+    padding-bottom: 42px;
+    line-height: 1.2;
+
+}
+
+
+/*서브메뉴 수정하기_여기까지  */
+
+input[id=menu_icon]:checked+label+div {
+    top: 0;
+}
+
+.my_page {
+    width: 119px;
+    height: 42px;
+
+}
+
+.my_page a {
+    border: 2px solid #fff;
+    border-radius: 0 25px 0 0;
+    color: #fff;
+    padding: 14px 26px 10px 26px;
+    position: fixed;
+    right: 35px;
+    top: 32px;
+    z-index: 100;
+}
+
+#header_inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+.logo {
+    position: fixed;
+    z-index: 101;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*main_banner*/
+
+.main_banner_inner {
+    width: 100%;
+}
+
+
+.main_banner_inner .swiper-slide img {
+    width: 100%;
+}
+
+#main_banner .nb_next,
+#main_banner .nb_prev {
+    color: #fff;
+}
+
+/*calendar*/
+#calendar {
+    background: url(../img_book/Calendar_back.jpg) repeat-y left top;
+    height: 970px;
+}
+
+.calendar_inner {
+    padding-top: 139px;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.caledger_p1 {
+    display: flex;
+}
+
+.left_box {
+    background: url(../img_book/Calendar_title_back.png) no-repeat left top;
+    width: 353px;
+    text-align: center;
+}
+
+.calendar_title {
+    height: 272px;
+    font-size: 30px;
+    color: #728c84;
+    font-family: 'GyeonggiTitle';
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+
+.calendar_title li:first-child {
+
+    padding-top: 62px;
+}
+
+
+.calendar_title span {
+    font-size: 50px;
+}
+
+.left_box P {
+    text-align: center;
+}
+
+
+.right_box {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'GyeonggiTitle';
+    font-weight: 400px;
+}
+
+.right_box_title {
+    padding-left: 85px;
+    padding-bottom: 9px;
+}
+
+/*테이블 호버*/
+.right_box tr:hover {
+    background-color: rgba(178, 151, 131, 0.83);
+}
+
+.right_box tr {
+    transition: all 0.5s;
+}
+
+
+
+/*테이블 시작 */
+.right_box table {
+    width: 811px;
+    border-collapse: collapse;
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.right_box table td {
+    text-indent: 30px;
+}
+
+.right_box table tr:first-child th {
+    padding: 23px 0 19px 0;
+    background-color: #f5eee4;
+}
+
+.right_box table {}
+
+.right_box table td {
+    padding: 11px 0;
+}
+
+.right_box table tr:nth-child(2) td {
+    line-height: 1;
+    padding: 24px 0 11px 0;
+}
+
+.right_box table tr:last-child td {
+    padding: 11px 0 24px 0;
+}
+
+.check {
+    display: flex;
+    align-items: flex-end;
+}
+
+.calendar_p2 {
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    box-shadow: 4px 6px 4px rgba(189, 171, 157, 0.5);
+    position: relative;
+}
+
+.btn_go {
+    position: absolute;
+    bottom: 31px;
+    right: 75px;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.btn_go a {
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    background-color: #d4a675;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 31px 0;
+    transition: all 0.8s;
+
+}
+
+.btn_go:hover a {
+    box-shadow: 3px 3px 2px rgba(138, 110, 81, 0.8);
+    transform: scale(1.03);
+}
+
+/*padding: 20px 0;
+    background-color: #f5eee4;*/
+
+/*오늘날짜 표시달력 위 input 태그*/
+.clender_click {
+    width: 353px;
+    height: 63px;
+    border-radius: 30px 30px 0 0;
+    border: none;
+    background-color: #f1e6da;
+    background: url(../img_book/icon_Reservation.png) 93% center no-repeat, #f1e6da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+
+}
+
+.clender_click p {
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'GyeonggiTitle';
+    font-weight: 400px;
+
+}
+
+/*오늘날짜 표시 달력 만들기_시작*/
+
+.calender_today {
+    font-family: 'GyeonggiTitle';
+    font-size: 18px;
+    text-align: center;
+    /*width: 100vw;
+    height: 100vh;*/
+    width: 353px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calendar-container {
+
+
+    height: 391px;
+    width: 333px;
+    margin: 11px auto;
+    border-radius: 0 0 30px 30px;
+
+
+    box-shadow: 0 2px 4px rgba(189, 171, 157, 0.83);
+    padding: 10px;
+    background-color: #f1e6da;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 
+grid-template-columns : CSS의 Grid 레이아웃에서 사용되는 속성(property) 중 하나로, 
+그리드 컨테이너(grid container)의 열(column) 크기를 지정하는 것을 말한다.
+repeat(7, 1fr) : 1행에 7개의 열이 있으며, 
+각 열의 크기를 동일하게 1분의 1(fractional unit, fr)로 설정하라는 의미한다. */
+    font-weight: bold;
+    /* padding-bottom: 5px;*/
+}
+
+/* grid-template-columns 속성을 사용하여 그리드 컨테이너의 열 크기를 유연하게 조정할 수 있으며, 
+반응형 웹 디자인에서 유용하게 활용된다. 
+이렇게 함으로써 웹페이지의 레이아웃을 다양한 화면 크기와 장치에 맞추는데 도움이 된다. */
+
+.day {
+    padding: 5px;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+.date {
+    cursor: pointer;
+    padding: 9px;
+}
+
+.date:hover {
+    background-color: #728c84;
+    border-radius: 50%;
+    color: #f1e6da;
+}
+
+#currentMonth {
+    font-size: 24px;
+    padding-top: 9px;
+}
+
+/*오늘날짜 표시달력 만들기 끝*/
+#prevBtn,
+#nextBtn {
+    border: none;
+    background: none;
+}
+
+/* #programe_more */
+#programe_more {
+    background: url(../img_book/Program_more_back.png) bottom center no-repeat;
+    height: 731px;
+    box-sizing: border-box;
+}
+
+.programe_more_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.title_more_book {
+    font-family: 'Hahmlet';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 84px;
+    padding-bottom: 73px;
+}
+
+.more_programe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.more_box {
+    position: relative;
+}
+
+.more_point {
+    position: absolute;
+    top: -38px;
+    right: -9px;
+}
+
+/* 호버*/
+.more_box {
+    transition: all 0.5s;
+}
+
+.more_box:hover {
+    transform: scale(1.02) translateY(-20px);
+}
+
+/*notice*/
+
+#notice {
+    background: url(../img_book/notice_back.png) no-repeat top center;
+    height: 666px;
+    box-sizing: border-box;
+    font-family: 'Hahmlet';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.notice_inner {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+.notice_inner ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    border-bottom: solid 5px #d4a675;
+    width: 1265px;
+    margin: 0 27.75px 16px 27.75px;
+    padding: 61px 25px 18px 25px;
+    box-sizing: border-box;
+
+}
+
+.notice_inner ol li:first-child {
+    font-family: 'Hahmlet';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 1px;
+
+
+}
+
+.notice_inner ol li:last-child {
+    width: 450px;
+    height: 45px;
+    color: #fff;
+    background: #c4ccb6;
+    border-radius: 22.5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+    position: relative;
+}
+
+.notice_inner ol li input {
+    font-family: 'Hahmlet';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    width: 71%;
+    height: 67%;
+    border: none;
+    background: none;
+    color: rgba(80, 80, 78, 1);
+    /*input태그의 입력글씨는 여기 직접설정하기 */
+
+}
+
+.Magnifier {
+    position: absolute;
+    right: 25px;
+    top: 7px;
+}
+
+.notice_inner ol li input:focus {
+    outline: none;
+}
+
+.notice_inner ol li ::placeholder {
+    font-family: 'Hahmlet';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #fcf6f0;
+    letter-spacing: 1px;
+
+
+}
+
+.notice_inner .table {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.notice_inner table {
+
+    border-collapse: collapse;
+    width: 1265px;
+    height: 359px;
+}
+
+.notice_inner table th {
+    background-color: #d4a675;
+    height: 46px;
+    box-sizing: border-box;
+}
+
+.notice_inner table td {
+    text-indent: 27px;
+    border-bottom: solid 5px #d4a675;
+    height: 68px;
+    box-sizing: border-box;
+}
+
+.notice_inner .date {
+    width: 165px;
+}
+
+
+.notice_inner .turning_page {
+    padding-top: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+.notice_inner .turning_page p:nth-child(2) {
+    padding: 0 58px;
+}
+
+
+.notice_inner table tr:hover {
+    box-shadow: inset 0 -8em 0 0 rgba(243, 201, 147, 0.61);
+}
+
+.notice_inner table tr {
+    transition: all 0.5s;
+}
+
+/*#book_banner*/
+#book_banner {
+    padding: 31px;
+    max-width: 1730px;
+    margin: 0 auto;
+}
+
+#book_banner ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.book_arrow {
+    position: absolute;
+    bottom: 29px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.book_arrow {
+    animation: up_and_down 1s linear infinite;
+
+}
+
+@keyframes up_and_down {
+    0% {
+        transform: translatey(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/*book_month*/
+.month_inner {
+    width: 1320px;
+    margin: 0 auto;
+    background: url(../img_book/book_back.png) center 597px no-repeat;
+    padding-bottom: 74px;
+}
+
+.month_inner ul {
+    display: flex;
+    justify-content: center;
+}
+
+.month_inner p {
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.month_inner .click_img {
+    margin-top: 41px;
+    width: 770px;
+}
+
+.click_img .swiper-slide:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.click_img2 {
+    text-align: center;
+}
+
+.month_inner ol {
+    font-size: 30px;
+    font-weight: 900;
+    color: #d1c5b7;
+    font-family: 'Hahmlet';
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 44px;
+}
+
+.month_inner ol li:last-child {
+    padding-left: 10px;
+}
+
+
+
+
+
+/*폰트는 경기청년바탕체, 함렛을 쓴다.
+1.경기천년바탕 font-family: 'GyeonggiBatang';
+2.경기천년제목 font-family: 'GyeonggiTitle';
+3.함렛  font-family: 'Hahmlet';
+
+*/
+
+/*footer*/
+footer {
+    height: 337px;
+    background-color: #95806a;
+}
+
+.footer_inner {
+    position: relative;
+    padding-top: 70px;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.footer_icon {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.footer_icon li {
+    padding-right: 24px;
+}
+
+.footer_icon li a:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #867c72e7);
+    transition: all 0.3s;
+}
+
+
+.adress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'GyeonggiTitle';
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.adress img {
+    padding-bottom: 20px;
+}
+
+.adress li:nth-child(2) {
+    padding-bottom: 6px;
+}
+
+.adress li:nth-child(3) {
+    padding-bottom: 14px
+}
+
+.footer_quick {
+    width: 160px;
+    padding-top: 67px;
+    background: url(../img/footer_quick_ill.png) no-repeat right top;
+}
+
+.footer_quick a {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 0 25px 0 0;
+    color: #fff;
+    display: block;
+    width: 104px;
+    height: 42px;
+    margin-top: 41px;
+    margin-left: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+
+    transition: all 1s;
+}
+
+.footer_quick:hover a {
+
+    text-shadow: 3px 3px 3px #be9450de;
+    box-shadow: 3px 3px 3px #be9450de;
+}
+
+/*fixed_button*/
+#fixed_button {
+    margin: 0 auto;
+    max-width: 1520px;
+}
+
+.fixed_inner {
+
+    position: fixed;
+    right: 59px;
+    bottom: 72px;
+    z-index: 99;
+    display: flex;
+
+}
+
+.top_btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #a4a39391;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.top_btn img {
+    width: 47%;
+}
+
+.top_btn2 {
+    width: 70%;
+    text-align: center;
+    padding-left: 15px;
+
+}
+
+.top_btn2 img {
+    width: 70%;
+}
+
+.top_btn2>ul li>p {
+    margin-left: 32px;
+    background-color: #a4a39391;
+    font-family: "Hahmlet", serif;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 4px;
+    width: 80px;
+}
+
+
+
+/*스크롤바*/
+/* 스크롤 바 전체에 대한 스타일 지정 */
+::-webkit-scrollbar {
+    width: 8px;
+    /* 스크롤 바의 너비 */
+    height: 8px;
+    /* 스크롤 바의 높이 */
+    background-color: #f0f0f0;
+    /* 스크롤 바의 배경색 */
+}
+
+/* 스크롤 바의 색상 지정 */
+::-webkit-scrollbar-thumb {
+    background-color: #e1af7b;
+    /* 스크롤 바의 색상 */
+}
+
+/* 스크롤 바 호버 시 색상 지정 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffaf58;
+    /* 스크롤 바의 색상 */
+}
+
+/* 수평 스크롤 바에 대한 스타일 지정 */
+::-webkit-scrollbar-horizontal {
+    height: 12px;
+    /* 스크롤 바의 높이 */
+    background-color: #f0f0f0;
+    /* 스크롤 바의 배경색 */
+}
+
+/* 수직 스크롤 바에 대한 스타일 지정 */
+::-webkit-scrollbar-vertical {
+    width: 12px;
+    /* 스크롤 바의 너비 */
+    background-color: #f0f0f0;
+    /* 스크롤 바의 배경색 */
+}
+
+/* 스크롤 버튼에 대한 스타일 지정 */
+::-webkit-scrollbar-button {
+    width: 0;
+}

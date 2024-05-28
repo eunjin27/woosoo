@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-ExtraBold.eot');
+    src: url('Hahmlet-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Bold.eot');
+    src: url('Hahmlet-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Black.eot');
+    src: url('Hahmlet-Black.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-ExtraLight.eot');
+    src: url('Hahmlet-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Regular.eot');
+    src: url('Hahmlet-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Medium.eot');
+    src: url('Hahmlet-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-SemiBold.eot');
+    src: url('Hahmlet-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Thin.eot');
+    src: url('Hahmlet-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url('Hahmlet-Light.eot');
+    src: url('Hahmlet-Light.eot?#iefix') format('embedded-opentype'),
+        url('Hahmlet-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
